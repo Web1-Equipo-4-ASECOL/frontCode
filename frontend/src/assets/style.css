@@ -59,8 +59,8 @@ section {
 
 .heading {
     text-align: center;
-    margin: 3rem 0 7rem;
-    font-size: 3.5rem;
+    margin: 7rem 0 7rem;
+    font-size: 3rem;
     font-weight: 500;
     color: var(--titulo);
 }
@@ -96,12 +96,18 @@ section {
     border-radius: 0px 0px 30px 30px;
    
 }
-
 .header a img {
     width: 220px;
 }
+.header .navbar a {
+    font-size: 1rem;
+    margin: 0 1rem;
+    color: var(--blanco);
+}
 
-
+.header .navbar a:hover {
+    color: var(--azul-hover);
+}
 
 .header .icons {
     display: flex;
@@ -254,19 +260,15 @@ section {
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-
 .home .image {
     flex: 1 1 33rem;
 }
-
 .home .image img {
     width: 100%;
 }
-
 .home .content {
     flex: 1 1 33rem;
 }
-
 .home .content h3 {
     color: var(--titulo);
     font-size: 2.2rem;
@@ -286,7 +288,6 @@ section {
     padding: .5rem 0;
 }
 
-
 /**** SERVICES ****/
 .services {
     position: relative;
@@ -294,11 +295,11 @@ section {
 }
 .services-heading {
     text-align: center;
-    margin: 7rem 0 5rem;
+    margin: 5rem 0 5rem;
     font-size: 3.5rem;
     font-weight: 500;
     color: var(--titulo);
-}
+} 
 .services .floating-information {
     position: absolute;
     width: 60%;
@@ -323,12 +324,10 @@ section {
     align-items: center;
     gap: 1.2rem;
 }
-
 .services .floating-information .floating-container .icon-text p {
     font-size: 1rem;
     color: var(--blanco);
 }
-
 .services .box-container {
     display: flex;
     justify-content: center;
@@ -336,7 +335,6 @@ section {
     gap: 7rem;
     padding-bottom: 7rem;
 }
-
 .services .box-container .box {
     width: 251px;
     height: 300px;
@@ -345,11 +343,9 @@ section {
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
 }
-
 .services .box-container .box:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,.2);
 }
-
 .services .box-container .box img {
     max-width: 130px;
     margin-top: 2rem;
@@ -451,6 +447,9 @@ section {
 #news{
     position: relative;
 }
+#news .heading{
+    margin: 3rem 0 5rem;
+}
 .column {
     float: left;
     width: 50%;
@@ -494,7 +493,6 @@ section {
     display: flex;
     justify-content: center;
 }
-
 .news-btn:hover {
     background: var(--verde);
     color: var(--blanco);
@@ -526,12 +524,11 @@ section {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-
-
 /*************** USERS ***************/
 .users {
     margin-bottom: 2em;
-    background: #fbfbfe;
+    /* background: #fbfbfe; */
+    /* background-color: green; */
 }
 .users .box-container {
     display: flex;
@@ -540,20 +537,16 @@ section {
     gap: 7rem;
     padding-bottom: 7rem;
 }
-
 .users .box-container .box {
-    width: 20rem;
-    height: 300px;
+    width: 15rem;
     text-align: center;
-    /* border: var(--border); */
-    box-shadow: var(--box-shadow);
+    border: var(--border);
     border-radius: .5rem;
+    box-shadow: 0px 5px 5px 0px rgba(54,93,108,1);
 }
-
 .users .box-container .box:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    box-shadow: 0 10px 30px rgba(54,93,108,1);
 }
-
 .users .box-container .box h3 {
     padding: 1rem;
     font-size: 1.8rem;
@@ -561,27 +554,18 @@ section {
     line-height: 1.3;
     color: var(--verde);
 }
-
-.users .box-container .box .green-border {
-    width:100%;
-    height:10px;
-    border-radius: 0 0 .5rem .5rem;
-    background: var(--verde);
-}
-
 .users .box img {
     max-width: 85%;
     height: 10rem;
     margin: 5px;
 }
-
-.users .box-container .box .blue-border {
+/* .users .box-container .box .blue-border {
     width: 100%;
     height: 10px;
     margin-top: 1.2rem;
     border-radius: 0 0 .5rem .5rem;
-    background: var(--texto);
-}
+    background: var(--texto); 
+ } */
 
 /***************        FOOOTER                        ***************/
 .footer{
@@ -597,10 +581,13 @@ section {
     margin: auto 5rem;
     color: var(--blanco);
 }
-.footer a #github{
+.footer #github{
     color: var(--blanco);
     text-decoration: none;
+    font-size: 1rem;
+    margin: 5px;
 }
+
 .vertical-line{ 
     width: 2px; 
     background-color: var(--blanco);  

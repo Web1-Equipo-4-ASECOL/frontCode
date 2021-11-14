@@ -13,17 +13,9 @@ function TheFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          github 
+          Github <i class="bi bi-github"></i>
         </a>
         <br/>
-        <a
-          id="github"
-          href="https://drive.google.com/drive/folders/1ngIpm-zesmVHHofRgZpTYww5Sw9kfVd1"
-          rel="noreferrer"
-          target="_blank"
-        >
-          drive
-        </a>
       </div>
       <div className="vertical-line"></div>
       <div className="footer-team">

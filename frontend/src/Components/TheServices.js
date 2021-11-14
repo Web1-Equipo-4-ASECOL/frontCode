@@ -35,7 +35,7 @@ function TheServices(){
                 </div>
             </div>
 
-            <h1 className="services-heading">Nuestros Servicios</h1>
+            <h1 className="heading">Nuestros Servicios</h1>
 
             <div className="box-container">
                 <div className="box">

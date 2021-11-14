@@ -48,7 +48,7 @@ const MontarNoticia = (props) =>{
 function TheNews() {
     return ( 
         <section className="news" id="news">
-            <h1 className="heading heading-top">Noticias</h1>
+            <h1 className="heading">Noticias</h1>
             <div className="row">
                 <MontarNoticia news={news.new1}/>
                 <MontarNoticia news={news.new2}/>

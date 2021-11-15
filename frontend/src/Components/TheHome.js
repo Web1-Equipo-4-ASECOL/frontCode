@@ -1,6 +1,6 @@
 import React from 'react';
 import home_image from '../assets/img/img_grande.jpg';
-function TheHome() {
+const TheHome = () => {
     return ( 
         <section className="home" id="home">
             <div className="image">

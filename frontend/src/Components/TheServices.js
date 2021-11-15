@@ -7,7 +7,7 @@ import elemento from '../assets/img/elementos-aseo.png';
 import carrito from '../assets/img/carrito-aseo.png';
 import capacitacion from '../assets/img/capacitacion-aseo.png';
 
-function TheServices(){
+const TheServices = () => {
     return(
         <section className="services" id="services">
             <div className="floating-information">

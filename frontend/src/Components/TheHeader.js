@@ -1,12 +1,42 @@
 import React from 'react';
 import nav_image from '../assets/logo.png';
-function TheHeader() {
-  return (
+
+const TheHeader = () => {
+    const btnMenu = () =>{
+        let shoppingCart = document.querySelector('.shopping-cart');
+        let loginForm = document.querySelector('.login-form');
+        let navbar = document.querySelector('.navbar');
+        document.querySelector('#menu-btn').onclick = () => {
+            navbar.classList.toggle('active');
+            shoppingCart.classList.remove('active');
+            loginForm.classList.remove('active');
+        }
+    }
+    const btnCart = () =>{
+        let shoppingCart = document.querySelector('.shopping-cart');
+        let loginForm = document.querySelector('.login-form');
+        let navbar = document.querySelector('.navbar');
+        document.querySelector('#cart-btn').onclick = () => {
+            shoppingCart.classList.toggle('active');
+            loginForm.classList.remove('active');
+            navbar.classList.remove('active');
+        }
+    }
+    const btnLogin = () =>{
+        let shoppingCart = document.querySelector('.shopping-cart');
+        let loginForm = document.querySelector('.login-form');
+        let navbar = document.querySelector('.navbar');
+        document.querySelector('#login-btn').onclick = () => {
+            loginForm.classList.toggle('active');
+            shoppingCart.classList.remove('active');
+            navbar.classList.remove('active');
+        }
+    }
+    return (
     <header className="header">
         <a href="#home">
             <img src={nav_image} alt=""/>
         </a>
-
         <nav className="navbar">
             <a href="#home">Inicio</a>
             <a href="#services">Servicios</a>
@@ -15,9 +45,9 @@ function TheHeader() {
             <a href="#products">Productos</a>
         </nav>
         <div className="icons">
-            <div className="bi bi-list" id="menu-btn"></div>
-            <div className="bi bi-cart4" id="cart-btn"></div>
-            <div className="bi bi-person-fill" id="login-btn"></div>
+            <div className="bi bi-list" id="menu-btn" onClick={() => btnMenu()}></div>
+            <div className="bi bi-cart4" id="cart-btn" onClick={() => btnCart()}></div>
+            <div className="bi bi-person-fill" id="login-btn" onClick={() => btnLogin()}></div>
         </div>
 
         <div className="shopping-cart">

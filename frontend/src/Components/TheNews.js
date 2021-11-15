@@ -45,7 +45,7 @@ const MontarNoticia = (props) =>{
         </div>       
     );
 }
-function TheNews() {
+const TheNews = () => {
     return ( 
         <section className="news" id="news">
             <h1 className="heading">Noticias</h1>

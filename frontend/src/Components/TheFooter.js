@@ -1,7 +1,7 @@
 import React from "react";
 import logo from '../assets/img/LOGO asecol-04.png';
 import '../assets/style.css';
-function TheFooter() {
+const TheFooter = () => {
   return (
     <footer className="footer">
       <div className="footer-info">

@@ -1,6 +1,6 @@
 import React from "react";
 import user from '../assets/img/user.png';
-function TheTeam(){
+const TheTeam = () => {
     return(
         <section className="users" id="users">
             <h1 className="heading">NOSOTROS</h1>

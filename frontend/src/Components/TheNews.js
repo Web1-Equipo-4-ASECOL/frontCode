@@ -25,27 +25,28 @@ const news={
         "poster": "https://img.lalr.co/cms/2021/04/05115444/WhatsApp-Image-2021-05-04-at-2.15.11-PM.jpeg?size=sm"
     }
 }
-const MontarNoticia = (props) =>{
-    return(
-        <div className="column">
-            <div className="card">
-                <div className="wrapper">
-                    <div className="image">
-                       <img className="book-image" src={props.news.poster} alt={props.news.nombre}/>
-                    </div>
-                    <div className="data">
-                        <div className="content">
-                            <h1 className="title">{props.news.nombre}</h1>
-                            <p className="text">{props.news.descripcion}</p>
-                            <a className="news-btn" href={props.news.link} target="_blank" rel="noreferrer">Leer más</a>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>       
-    );
-}
+
 const TheNews = () => {
+    const MontarNoticia = (props) =>{
+        return(
+            <div className="column">
+                <div className="card">
+                    <div className="wrapper">
+                        <div className="image">
+                           <img className="book-image" src={props.news.poster} alt={props.news.nombre}/>
+                        </div>
+                        <div className="data">
+                            <div className="content">
+                                <h1 className="title">{props.news.nombre}</h1>
+                                <p className="text">{props.news.descripcion}</p>
+                                <a className="news-btn" href={props.news.link} target="_blank" rel="noreferrer">Leer más</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>       
+        );
+    }
     return ( 
         <section className="news" id="news">
             <h1 className="heading">Noticias</h1>

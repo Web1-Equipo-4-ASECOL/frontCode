@@ -1,5 +1,5 @@
 import React from "react";
-import user from '../assets/img/user.png';
+import user from '../../assets/img/user.png';
 const TheTeam = () => {
     return(
         <section className="users" id="users">
@@ -8,27 +8,22 @@ const TheTeam = () => {
             <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Jhon Fredy</h3>
-                    <div className="blue-border"></div>
                 </div>
                 <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Maria</h3>
-                    <div className="blue-border"></div>
                 </div>
                 <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Ana Maria</h3>
-                    <div className="blue-border"></div>
                 </div>
                 <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Estefania</h3>
-                    <div className="blue-border"></div>
                 </div>
                 <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Cristhian</h3>
-                    <div className="blue-border"></div>
                 </div>
             </div>
         </section>

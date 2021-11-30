@@ -1,11 +1,11 @@
 import React from 'react';
-import ambulancia from '../assets/img/ambulancia.png';
-import rectangulo from '../assets/img/Rectangle.svg';
-import operador from '../assets/img/operador.png';
-import escudo from '../assets/img/escudo.png';
-import elemento from '../assets/img/elementos-aseo.png';
-import carrito from '../assets/img/carrito-aseo.png';
-import capacitacion from '../assets/img/capacitacion-aseo.png';
+import ambulancia from '../../assets/img/ambulancia.png';
+import rectangulo from '../../assets/img/Rectangle.svg';
+import operador from '../../assets/img/operador.png';
+import escudo from '../../assets/img/escudo.png';
+import elemento from '../../assets/img/elementos-aseo.png';
+import carrito from '../../assets/img/carrito-aseo.png';
+import capacitacion from '../../assets/img/capacitacion-aseo.png';
 
 const TheServices = () => {
     return(
@@ -41,19 +41,16 @@ const TheServices = () => {
                 <div className="box">
                     <img src={elemento} alt=""/>
                     <h3>Proveedor Mayorista y Minorista</h3>
-                    <div className="green-border"></div>
                 </div>
          
                 <div className="box">
                     <img src={carrito} alt=""/>
                     <h3>Accesorios e Insumos para Empresas</h3>
-                    <div className="green-border"></div>
                 </div>
 
                 <div className="box">
                     <img src={capacitacion} alt=""/>
                     <h3>Capacitaciones y Asesorias</h3>
-                    <div className="green-border"></div>
                 </div>
             </div>
         </section>

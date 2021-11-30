@@ -1,5 +1,5 @@
 import React from 'react';
-import home_image from '../assets/img/img_grande.jpg';
+import home_image from '../../assets/img/img_grande.jpg';
 const TheHome = () => {
     return ( 
         <section className="home" id="home">

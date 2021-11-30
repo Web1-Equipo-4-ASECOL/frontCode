@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../assets/img/LOGO asecol-04.png';
-import '../assets/style.css';
+import logo from '../../assets/img/LOGO asecol-04.png';
+import '../../assets/style.css';
 const TheFooter = () => {
   return (
     <footer className="footer">
@@ -13,7 +13,7 @@ const TheFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Github <i class="bi bi-github"></i>
+          Github <i className="bi bi-github"></i>
         </a>
         <br/>
       </div>

@@ -5,25 +5,9 @@ const TheTeam = () => {
         <section className="users" id="users">
             <h1 className="heading">NOSOTROS</h1>
             <div className="box-container">
-            <div className="box">
-                    <img src={user} alt="usuario"/>
-                    <h3>Jhon Fredy</h3>
-                </div>
-                <div className="box">
-                    <img src={user} alt="usuario"/>
-                    <h3>Maria</h3>
-                </div>
-                <div className="box">
-                    <img src={user} alt="usuario"/>
-                    <h3>Ana Maria</h3>
-                </div>
                 <div className="box">
                     <img src={user} alt="usuario"/>
                     <h3>Estefania</h3>
-                </div>
-                <div className="box">
-                    <img src={user} alt="usuario"/>
-                    <h3>Cristhian</h3>
                 </div>
             </div>
         </section>

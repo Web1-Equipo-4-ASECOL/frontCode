@@ -15,39 +15,32 @@ const Navbar = () => {
         localStorage.removeItem("lastPath");
     }
 
-
     return (
         <nav className="navbar navbar-expand-lg">
             <img src={nav_image} alt="logo" />
             <div className="collapse navbar-collapse" id="navbarText">
                 <div className="navbar-nav mr-auto">
-                    <NavLink
-                        className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
-                        to="search">
-                        Search
-                    </NavLink>
+
                     <NavLink
                         className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
                         to="categoria">
-                        Categorias
+                        Categoria
+                    </NavLink>
+                    <NavLink
+                        className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
+                        to="usuario">
+                        Usuario
                     </NavLink>
                     <NavLink
                         className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
                         to="producto">
-                        Productos
+                        Producto
                     </NavLink>
-                    
-                    {/* <NavLink
-                        className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
-                        to="/categoriaDT">
-                        CategoriaDT
-                    </NavLink>
-                   
                     <NavLink
                         className={({isActive}) => 'nav-item nav-link ' + (isActive? 'active' : '')}
-                        to="/productoDT">
-                        ProductoDT
-                    </NavLink> */}
+                        to="compra">
+                        Compras
+                    </NavLink>
                 </div>
                 <div className="navbar-collapse collapse w-80 order-3 dual-collapse2 d-flex ">
                     <ul className="navbar-nav ml-auto">

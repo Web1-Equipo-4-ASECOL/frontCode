@@ -1,5 +1,4 @@
 import React from 'react'
-// import '.././App.css';
 import '../assets/style.css';
 import TheHeader from './index/TheHeader';
 import TheHome from './index/TheHome';
@@ -8,7 +7,7 @@ import TheNews from './index/TheNews';
 import TheTeam from './index/TheTeam';
 import TheFooter from './index/TheFooter';
 
-const Home = () => {
+const DashboardHome = () => {
   return (
     <div>
       <TheHeader />
@@ -23,5 +22,6 @@ const Home = () => {
   )
 }
 
-export default Home
+export default DashboardHome
+
 

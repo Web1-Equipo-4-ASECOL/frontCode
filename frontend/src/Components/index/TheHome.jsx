@@ -1,4 +1,5 @@
 import React from 'react';
+
 import home_image from '../../assets/img/img_grande.jpg';
 const TheHome = () => {
     return ( 

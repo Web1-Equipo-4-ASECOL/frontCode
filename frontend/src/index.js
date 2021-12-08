@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AsecolApp from './AsecolApp';
+import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <AsecolApp/>,
+  <App/>,
   document.getElementById('root')
 );
+
+

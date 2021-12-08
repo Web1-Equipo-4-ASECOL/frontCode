@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
     --gris: #798B95;
@@ -33,7 +32,7 @@ body {
     background: var(--blanco);
 }
 
-/* #nav {
+nav{
     background-color: #798B95;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: 0px 0px 30px 30px;
@@ -41,18 +40,20 @@ body {
     padding: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    color: var(--blanco);
 }
 
-#nav a {
+nav a {
     font-weight: bold;
     color: white;
     padding: 0 30px;
 }
 
-#nav a.router-link-exact-active {
-    color: #42b983;
+nav img {
+    width: 220px;
     
-} */
+}
 section {
     padding: 2rem 9%;
 }
@@ -75,6 +76,10 @@ section {
     color: var(--verde);
     cursor: pointer;
     background: none;
+}
+.info-text{
+    color: var(--verde);
+    font-weight: 800;
 }
 .btn-sm{
     display: inline-block;
@@ -99,7 +104,7 @@ section {
     align-items: center;
     justify-content: space-between;
     /* padding: 1rem 4%; */
-    padding: 1rem 9%;
+    padding: 1rem 6%;
     background: var(--gris);
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 30px 30px;
@@ -115,7 +120,10 @@ section {
     margin: 0 1rem;
     color: var(--blanco);
 }
-
+.btn-link{
+    background-color: transparent;
+    color:var(--blanco)
+}
 .header .navbar a:hover {
     color: var(--azul-hover);
 }
@@ -609,8 +617,8 @@ box-shadow: 0 10px 30px rgba(54,93,108,1);
     flex-wrap: wrap;
 }
 .footer-team div{
-    margin: 1rem;
-    width: 40%;
+    margin: auto;
+    width: 60%;
 }
 .footer-logo{
     width: 15%;
@@ -622,6 +630,24 @@ box-shadow: 0 10px 30px rgba(54,93,108,1);
 .footer-logo img{
     width: 100%;
 }
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* --------------------------------DATA TABLES-----------------------------------*/
+.modalBox{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border: 2px solid #000;
+    box-shadow: 24;
+}
+
 
 /* media queries */
 @media(max-width: 1310px) {
